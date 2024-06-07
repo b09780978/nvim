@@ -9,13 +9,3 @@ return {
     require("bamboo").load()
   end,
 }
-
---[[
-return {
-  "folke/tokyonight.nvim",
-  priority = 1000, -- must load firt than other
-  config = function()
-    vim.cmd("colorscheme tokyonight")
-  end
-}
---]]
