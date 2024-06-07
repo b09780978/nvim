@@ -1,4 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
+vim.cmd("set encoding=utf-8")
 
 local opt = vim.opt
 
