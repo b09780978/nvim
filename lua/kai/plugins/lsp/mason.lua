@@ -39,7 +39,7 @@ return {
         "isort", -- python formatter
         "black", -- python formatter
         "autopep8",
-        "pylint",
+        "flake8",
         "eslint_d",
       },
     })
