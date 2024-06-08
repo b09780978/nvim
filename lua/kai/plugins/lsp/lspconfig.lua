@@ -85,6 +85,20 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["pyright"] = function()
+          lspconfig["pyright"].setup({
+              capabilities = capabilities,
+              filetypes = { "python" },
+              settings = {
+                python = {
+                  autoSearchPaths = true,
+                  diagnosticMode = "openFilesOnly",
+                  useLibraryCodeForTypes = true,
+                  venvPath = "~/venv",
+                },
+              },
+          })
+      end,
     })
   end,
 }
