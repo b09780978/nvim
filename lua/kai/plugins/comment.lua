@@ -7,7 +7,7 @@ return {
   config = function()
     -- import comment plugin safely
     local comment = require("Comment")
-    local ft = require("Comment-ft")
+    local ft = require("Comment.ft")
 
     ft.python = { '#%s', "'''%s'''", }
 
