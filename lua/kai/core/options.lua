@@ -31,21 +31,23 @@ opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or 
 
 -- clipboard
 opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+
+-- just need open cmd and set use ctrl shift c
 -- for windows wsl2
-if vim.fn.has("wsl") == 1 then
-  vim.g.clipboard = {
-   name  = "WslClipboard",
-   copy = {
-     ['+'] = 'clip.exe',
-     ['*'] = 'clip.exe',
-   },
-   paste = {
-     ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-     ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-   },
-   cache_enabled = 0,
-  }
-end
+--if vim.fn.has("wsl") == 1 then
+--  vim.g.clipboard = {
+--   name  = "WslClipboard",
+--   copy = {
+--     ['+'] = 'clip.exe',
+--     ['*'] = 'clip.exe',
+--   },
+--   paste = {
+--     ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+--     ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+--   },
+--   cache_enabled = 0,
+--  }
+--end
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
