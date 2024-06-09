@@ -14,7 +14,7 @@ return {
         json = { "prettier" },
         markdown = { "prettier" },
         python = { "isort", "black" },
-        lua = { "stylua" },
+        --lua = { "stylua" },
       },
       format_on_save = {
         lsp_fallback = true,
