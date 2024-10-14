@@ -85,8 +85,13 @@ return {
           capabilities = capabilities,
         })
       end,
-      ["pyright"] = function()
-          lspconfig["pyright"].setup({
+      ["ruff"] = function()
+          lspconfig["ruff"].setup({
+              init_options = {
+                settings = {
+                  config = { "/root/.config/nvim/ruff.toml" },
+                },
+              },
               capabilities = capabilities,
               filetypes = { "python" },
               settings = {
