@@ -27,7 +27,6 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",
         "pyright",
       },
     })
@@ -35,10 +34,8 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter
-        "isort", -- python formatter
-        "black", -- python formatter
+        "ruff", -- python formatter
         "autopep8",
-        "flake8",
         "eslint_d",
       },
     })
