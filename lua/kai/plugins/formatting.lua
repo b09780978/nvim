@@ -13,7 +13,7 @@ return {
         html = { "prettier" },
         json = { "prettier" },
         markdown = { "prettier" },
-        python = { "isort", "black" },
+        python = { "ruff" },
         --lua = { "stylua" },
       },
       format_on_save = {
