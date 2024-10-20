@@ -27,7 +27,8 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        
+        "ruff",
+        "pyright",
       },
     })
 
@@ -35,6 +36,7 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "ruff", -- python formatter
+        "pyright",
         "autopep8",
         "eslint_d",
       },
